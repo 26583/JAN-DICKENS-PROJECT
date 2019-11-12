@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1b;
+}
+html{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.login{
+  margin-left: 35%;
+  text-align: center;
+  width: 30%;
+  height: 50vh;
+  background-color: #5c605c;
+}
+.login #name{
+  padding-top: 5vh;
+}
+.home{
+  position: absolute;
+  border-radius: 50vw 50vw 50vw 50vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: #e71d73;
+  text-decoration: none;
+  color: white;
+  margin-left: 1vw;
+}
+.home:hover{
+    color: white;
+    background-color: #c91e68;
+}

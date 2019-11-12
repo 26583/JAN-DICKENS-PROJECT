@@ -1,0 +1,44 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #5c605c;
+  color: white;
+}
+html{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.nav{
+  height: 11vh;
+  width: 100vw;
+  background-color: #1d1d1b;
+  color: white;
+  float: left;
+}
+.nav #name{
+  font-size: 4vh;
+  float: left;
+  margin-left: 1vw;
+}
+.nav #login{
+  border-radius: 50vw 50vw 50vw 50vw;
+  text-align: center;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: #e71d73;
+  float: right;
+  text-decoration: none;
+  color: white;
+  margin-right: 3vw;
+}
+.nav #login:hover{
+  color: white;
+  background-color: #c91e68;
+
+}
+.banner{
+  border-bottom: 4px solid #1d1d1b;
+}
