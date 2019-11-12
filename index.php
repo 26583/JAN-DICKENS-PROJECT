@@ -1,5 +1,16 @@
 <?php
   session_start();
+  $host = '127.0.0.1';
+  $user = 'c3666Pelle';
+  $password = 'saai123';
+  $database = 'c3666passjandickens';
+  $q = $_GET['q'];
+    $conn = mysqli_connect($host, $user, $password, $database) or die('Failed to connect: ' . mysqli_error());
+
+    $query="SELECT * FROM info";
+    $result=mysqli_query($conn, $query);
+
+
 ?>
 <html lang="en" dir="ltr">
   <head>
@@ -16,12 +27,22 @@
     <div class="mainTxt">
       <?php
       if (isset($_SESSION['loggedin'])) {
-
+        if ($result) {
+            while($row = $result->fetch_assoc()){
+              echo $row[loggedin];
+               }
+            }
        ?>
-       SECRETS
-     <?php }else{ ?>
-       You must log in to see secrets
-     <?php } ?>
+     <?php }else{
+       if ($result) {
+           while($row = $result->fetch_assoc()){
+             echo $row[loggedout];
+              }
+           }
+      } ?>
     </div>
   </body>
 </html>
+<?php
+  session_destroy();
+ ?>
